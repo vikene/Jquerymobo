@@ -1,71 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jquery Mobile - Templates site by vikene</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>US Times: Current news, Breaking news, Live news & videos, US & world</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+	<script src="js/jquery.js"></script>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Jquery Mobile - Templates site</h1>
-        <p>Collection of Jquery mobile Site templates</p>
-
-        <p class="view"><a href="https://github.com/vikene/Jquerymobo">View the Project on GitHub <small>vikene/Jquerymobo</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/vikene/Jquerymobo/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/vikene/Jquerymobo/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/vikene/Jquerymobo">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/vikene">vikene</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <style>
+	#us_times_header{
+		padding-top:5px;
+		padding-bottom:1px;
+		width:auto;
+		height:auto;
+		background:#e30a23;
+		
+	}
+	
+	.ui-icon-myicon1:after{
+		background-image:url("img/nation.png");
+		background-size: 18px 18px;
+	}
+	
+	.ui-icon-myicon2:after{
+		background-image:url("img/globe.png");
+		background-size: 18px 18px;
+	}
+		
+		
+	</style>
+</head>
+<body>    
+<div id="us_times_header">
+	  <center><img src="img/logo's/ustimeslogo.png" height="90" width="120"></center>
+</div>
+<div class="container">
+	<div class="row">
+    		
+            <div class="col-xs-12 text-center"><h4>Wednesday, 27 May 2014</h4></div>
+            
+             
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
+</div>
+	<form>
+    <div class="ui-field-contain">
+    <label for="select-native-1"><h4>Edition</h4></label>
+    	<select name="select-native-1" id="select-native-1">
+        	<option value="1">Chennai</option>
+            <option value="2">Banglore</option>
+            <option value="3">Hyderabad</option>
+            <option value="4">Madurai</option>
+            <option value="5">Noida</option>
+        	</select>
     
-  </body>
+    </div>
+    </form>
+    <h2>Breaking News</h2>
+	<ul data-role="listview" data-split-icon="arrow-r" data-split-theme="a" data-inset="true">
+    		<li><a href="#">
+            <img src="img/27IN_LPN_SWEARING__1916683b.jpg" height="160" width="160">
+            <h2>Narendra Modi</h2>
+            <p>We should change from confrontation to cooperation and not engage in accusations and counter-accusation..</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/27IN_LPN_1916659c.jpg" height="160" width="160">
+            <h2>Sushma swaraj</h2>
+            <p>First women to get MEA portfolio,...</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/26EPBS_FACEBOOK_09_1912384c.jpg">
+            <h2>FaceBook Goes down</h2>
+            <p>Currently facebook is facing temproary outage of memory..</p>
+            </a>
+            </li>
+     </ul>
+     
+     <div data-role="collapsible-set" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-theme="a" data-content-theme="a">
+     	<div data-role="collapsible">
+        	<h3>Headlines</h3>
+            <ul data-role="listview" data-split-icon="arrow-r" data-split-theme="a" data-inset="true">
+    		<li><a href="#">
+            <img src="img/13OEB_EMPIRE_JPG_1889906i.jpg" height="160" width="160">
+            <h2>Some news</h2>
+            <p>We can put any news hear, and it would be very awesome:)</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/02sm_Arundhati_jpg_1773723i.jpg" height="160" width="160">
+            <h2>New news</h2> 
+            <p>You get the best news here...</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/16KIMP_MAYADEVI_1895303i.jpg" height="160" width="160">
+            <h2>Awesome news</h2>
+            <p>Here you get awesome news ever u can get :)</p>
+            </a>
+            </li>
+     </ul>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Politics</h3>
+            	<ul data-role="listview" data-split-icon="arrow-r" data-split-theme="a" data-inset="true">
+    		<li><a href="#">
+            <img src="img/13OEB_EMPIRE_JPG_1889906i.jpg" height="160" width="160">
+            <h2>Some news</h2>
+            <p>We can put any news hear, and it would be very awesome:)</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/02sm_Arundhati_jpg_1773723i.jpg" height="160" width="160">
+            <h2>New news</h2> 
+            <p>You get the best news here...</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/16KIMP_MAYADEVI_1895303i.jpg" height="160" width="160">
+            <h2>Awesome news</h2>
+            <p>Here you get awesome news ever u can get :)</p>
+            </a>
+            </li>
+     </ul>
+        </div>
+        <div data-role="collapsible">
+        	<h3>India</h3>
+            	<ul data-role="listview" data-split-icon="arrow-r" data-split-theme="a" data-inset="true">
+    		<li><a href="#">
+            <img src="img/13OEB_EMPIRE_JPG_1889906i.jpg" height="160" width="160">
+            <h2>Some news</h2>
+            <p>We can put any news hear, and it would be very awesome:)</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/02sm_Arundhati_jpg_1773723i.jpg" height="160" width="160">
+            <h2>New news</h2> 
+            <p>You get the best news here...</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/16KIMP_MAYADEVI_1895303i.jpg" height="160" width="160">
+            <h2>Awesome news</h2>
+            <p>Here you get awesome news ever u can get :)</p>
+            </a>
+            </li>
+     </ul>
+        </div>
+        <div data-role="collapsible">
+        	<h3>World</h3>
+            		<ul data-role="listview" data-split-icon="arrow-r" data-split-theme="a" data-inset="true">
+    		<li><a href="#">
+            <img src="img/13OEB_EMPIRE_JPG_1889906i.jpg" height="160" width="160">
+            <h2>Some news</h2>
+            <p>We can put any news hear, and it would be very awesome:)</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/02sm_Arundhati_jpg_1773723i.jpg" height="160" width="160">
+            <h2>New news</h2> 
+            <p>You get the best news here...</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/16KIMP_MAYADEVI_1895303i.jpg" height="160" width="160">
+            <h2>Awesome news</h2>
+            <p>Here you get awesome news ever u can get :)</p>
+            </a>
+            </li>
+     </ul>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Business</h3>
+            	<ul data-role="listview" data-split-icon="arrow-r" data-split-theme="a" data-inset="true">
+    		<li><a href="#">
+            <img src="img/13OEB_EMPIRE_JPG_1889906i.jpg" height="160" width="160">
+            <h2>Some news</h2>
+            <p>We can put any news hear, and it would be very awesome:)</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/02sm_Arundhati_jpg_1773723i.jpg" height="160" width="160">
+            <h2>New news</h2> 
+            <p>You get the best news here...</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/16KIMP_MAYADEVI_1895303i.jpg" height="160" width="160">
+            <h2>Awesome news</h2>
+            <p>Here you get awesome news ever u can get :)</p>
+            </a>
+            </li>
+     </ul>
+        </div>
+        <div data-role="collapsible">
+        	<h3>Life Style</h3>
+            	<ul data-role="listview" data-split-icon="arrow-r" data-split-theme="a" data-inset="true">
+    		<li><a href="#">
+            <img src="img/13OEB_EMPIRE_JPG_1889906i.jpg" height="160" width="160">
+            <h2>Some news</h2>
+            <p>We can put any news hear, and it would be very awesome:)</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/02sm_Arundhati_jpg_1773723i.jpg" height="160" width="160">
+            <h2>New news</h2> 
+            <p>You get the best news here...</p>
+            </a></li>
+            <li><a href="#">
+            <img src="img/16KIMP_MAYADEVI_1895303i.jpg" height="160" width="160">
+            <h2>Awesome news</h2>
+            <p>Here you get awesome news ever u can get :)</p>
+            </a>
+            </li>
+     </ul>
+        </div>
+     
+     </div>
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+    	<ul>
+        	<li><a href="#" data-icon="home" class="ui-btn-active">Local News</a></li>
+            <li><a href="#" data-icon="custom"class="ui-icon-myicon1">National News</a></li>
+            <li><a href="#" data-icon="custom" class="ui-icon-myicon2">World News</a></li>
+        </ul>
+    </div>
+</div>
+	
+
+</body>
 </html>
+
